@@ -1,4 +1,4 @@
-public class Celular extends Aplicativos {
+public class Celular {
     public static void main(String[] args) {
         Aplicativos aplicativos = new Aplicativos();
 
