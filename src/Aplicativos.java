@@ -1,14 +1,16 @@
 public class Aplicativos {
+    // atributos do reprodutor de músicas
     private String nomeMusica;
-    private String artista;
+//    private String artista;
+//    private List<Aplicativos> musicas = Arrays.asList()
 
-    public String getArtista() {
-        return artista;
-    }
+//    public String getArtista() {
+//        return artista;
+//    }
 
-    public void setArtista(String artista) {
-        this.artista = artista;
-    }
+//    public void setArtista(String artista) {
+//        this.artista = artista;
+//    }
 
     public String getNomeMusica() {
         return nomeMusica;
@@ -18,10 +20,10 @@ public class Aplicativos {
         this.nomeMusica = nomeMusica;
     }
 
-    public void play(String nomeMusica, String artista) {
+    public void play(String nomeMusica) {
         setNomeMusica(nomeMusica);
-        setArtista(artista);
-        System.out.println("Reproduzindo agora: " + getNomeMusica() + " de " + getArtista());
+//        setArtista(artista);
+        System.out.println("Reproduzindo agora: " + getNomeMusica());
     }
 
     public String pause() {
