@@ -1,5 +1,4 @@
 public class Aplicativos extends Celular {
-    // TODO selecionar músicas de uma lista
     // atributos do reprodutor de músicas
     private String nomeMusica;
 //    private String artista;
@@ -27,8 +26,21 @@ public class Aplicativos extends Celular {
 //        setArtista(artista);
         System.out.println("Reproduzindo agora: " + getNomeMusica());
     }
+
     public String pause() {
         return "Música pausada.";
     }
+    // TODO selecionar músicas de uma lista
 
+    public String getNumeroTelefone() {
+        return numeroTelefone;
+    }
+
+    // atributo das ligações
+    private String numeroTelefone;
+
+    // métodos das ligações
+    public void chamar(String numeroTelefoneChamado){
+        System.out.println("Ligando para "+ numeroTelefoneChamado);
+    }
 }
