@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Aplicativos extends Celular {
     // atributos do reprodutor de músicas
     private String nomeMusica;
@@ -40,7 +42,19 @@ public class Aplicativos extends Celular {
     private String numeroTelefone;
 
     // métodos das ligações
-    public void chamar(String numeroTelefoneChamado){
-        System.out.println("Ligando para "+ numeroTelefoneChamado);
+    public void chamar(String numeroTelefoneChamado) {
+        System.out.println("Ligando para " + numeroTelefoneChamado);
+
+    }
+
+    public String receberLigacao() {
+        Random telefoneAleatorio = new Random();
+        String numeroAleatorio = "9";
+        for (int i = 0; i < 10; i++) {
+            int digitoAleatorio = telefoneAleatorio.nextInt(10);
+            numeroAleatorio += digitoAleatorio;
+        }
+
+        return numeroAleatorio;
     }
 }

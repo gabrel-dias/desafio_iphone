@@ -8,6 +8,7 @@ public class Celular {
         //chamadas
         Aplicativos chamadas = new Aplicativos();
         chamadas.chamar("85738166");
+        System.out.println("Recebendo ligação de " + chamadas.receberLigacao());
     }
 
 
