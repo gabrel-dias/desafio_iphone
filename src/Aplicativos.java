@@ -57,4 +57,7 @@ public class Aplicativos extends Celular {
 
         return numeroAleatorio;
     }
+    public String fazerLigacao(String numeroTelefone){
+        return ""
+    }
 }
