@@ -1,7 +1,6 @@
 package aplicativos;
 
-import java.util.Random;
-import java.util.Scanner;
+import java.util.*;
 
 public class Chamadas {
     // atributo das ligações
@@ -23,12 +22,22 @@ public class Chamadas {
         return numeroAleatorio;
     }
 
+    List<String> caixaPostal = new ArrayList<>();
+
     public void atenderRecusar() {
         Scanner simNao = new Scanner(System.in);
         System.out.println("Recebendo chamada de " + receberLigacaoAleatoria() + ", deseja atender? (S/N)");
         String escolha = simNao.nextLine().toLowerCase();
         if (escolha.equalsIgnoreCase("s")) {
             System.out.println("Chamada de " + receberLigacaoAleatoria() + " aceita");
-        } else System.out.println("Chamada recusada");
+        } else {
+            System.out.println("Chamada recusada e encaminhada para caixa postal!\n");
+            caixaPostal.add(receberLigacaoAleatoria());
+        }
+    }
+
+    public List<String> caixaPostal() {
+        System.out.println("Números que estão na caixa postal:");
+        return caixaPostal;
     }
 }
