@@ -1,4 +1,5 @@
 import java.util.Random;
+import java.util.Scanner;
 
 public class Aplicativos extends Celular {
     // atributos do reprodutor de músicas
@@ -30,7 +31,7 @@ public class Aplicativos extends Celular {
     }
 
     public String pause() {
-        return "Música pausada.";
+        return "Música pausada.\n";
     }
     // TODO selecionar músicas de uma lista
 
@@ -47,18 +48,24 @@ public class Aplicativos extends Celular {
 
     }
 
-    public String receberLigacao() {
+    public String receberLigacaoAleatoria() {
         Random telefoneAleatorio = new Random();
-        String numeroAleatorio = "9";
+        String numeroAleatorio = "(85) 9 ";
         for (int i = 0; i < 10; i++) {
             int digitoAleatorio = telefoneAleatorio.nextInt(10);
             numeroAleatorio += digitoAleatorio;
         }
-
         return numeroAleatorio;
     }
 
-    public String fazerLigacao(String numeroTelefone) {
-        return "Fazendo chamada para o número " + numeroTelefone + "...";
+    public void atenderRecusar() {
+        Scanner simNao = new Scanner(System.in);
+        System.out.println("Recebendo chamada de " + receberLigacaoAleatoria() + ", deseja atender? (S/N)");
+        String escolha = simNao.nextLine().toLowerCase();
+        if (escolha.equalsIgnoreCase("s")) {
+            System.out.println("Chamada de " + receberLigacaoAleatoria() + " aceita");
+        } else System.out.println("Chamada recusada");
     }
+
+
 }
