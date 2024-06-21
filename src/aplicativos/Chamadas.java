@@ -29,15 +29,16 @@ public class Chamadas {
         System.out.println("Recebendo chamada de " + receberLigacaoAleatoria() + ", deseja atender? (S/N)");
         String escolha = simNao.nextLine().toLowerCase();
         if (escolha.equalsIgnoreCase("s")) {
-            System.out.println("Chamada de " + receberLigacaoAleatoria() + " aceita");
+            System.out.println("Chamada de " + receberLigacaoAleatoria() + " aceita!");
         } else {
             System.out.println("Chamada recusada e encaminhada para caixa postal!\n");
             caixaPostal.add(receberLigacaoAleatoria());
         }
     }
 
-    public List<String> caixaPostal() {
-        System.out.println("Números que estão na caixa postal:");
-        return caixaPostal;
+    public void caixaPostal() {
+        if (!caixaPostal.isEmpty()) {
+            System.out.println("Números que estão na caixa postal:\n" + caixaPostal);
+        } else System.out.println("Caixa postal vazia!");
     }
 }

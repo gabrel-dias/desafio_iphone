@@ -14,7 +14,7 @@ public class Celular {
         Chamadas chamadas = new Chamadas();
         chamadas.chamar("85738066");
         chamadas.atenderRecusar();
-        System.out.println(chamadas.caixaPostal());
+        chamadas.caixaPostal();
 
     }
 
