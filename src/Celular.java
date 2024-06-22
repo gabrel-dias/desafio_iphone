@@ -16,6 +16,11 @@ public class Celular {
         chamadas.atenderRecusar();
         chamadas.caixaPostal();
 
+        // navegador
+        System.out.println("--Métodos do navegador--");
+        Navegador navegador = new Navegador();
+        navegador.abrirPagina();
+
     }
 
 
