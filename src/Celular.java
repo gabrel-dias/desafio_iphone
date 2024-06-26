@@ -1,4 +1,5 @@
 import aplicativos.*;
+import aplicativos.reprodutor.Reprodutor;
 
 
 public class Celular {
