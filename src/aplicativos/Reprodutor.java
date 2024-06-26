@@ -3,16 +3,16 @@ package aplicativos;
 public class Reprodutor {
     // atributos do reprodutor de músicas
     private String nomeMusica;
-//    private String artista;
-//    private List<aplicativos.Aplicativos> musicasList
+    private String artista;
+    private List<> musicasList
 
-//    public String getArtista() {
-//        return artista;
-//    }
+    public String getArtista() {
+        return artista;
+    }
 
-//    public void setArtista(String artista) {
-//        this.artista = artista;
-//    }
+    public void setArtista(String artista) {
+        this.artista = artista;
+    }
 
     public String getNomeMusica() {
         return nomeMusica;
