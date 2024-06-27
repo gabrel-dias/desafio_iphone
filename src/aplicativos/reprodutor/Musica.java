@@ -28,9 +28,6 @@ public class Musica {
 
     @Override
     public String toString() {
-        return "Musicas{" +
-                "nomeMusica='" + nomeMusica + '\'' +
-                ", artista='" + artista + '\'' +
-                '}';
+        return nomeMusica + " de " + artista;
     }
 }
