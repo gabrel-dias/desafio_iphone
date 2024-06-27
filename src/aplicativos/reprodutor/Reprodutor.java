@@ -36,11 +36,9 @@ public class Reprodutor {
             System.out.println("Tocando agora: " + musicasList.get(indiceLista) + "...\n");
         }
     }
-//        System.out.println("Reproduzindo agora: "+musicasList.get(indiceLista));
 
     public String pausar() {
         return "Música pausada.\n";
     }
-
 
 }

@@ -36,6 +36,7 @@ public class Chamadas {
         }
     }
 
+    // TODO fazer uma lista descente para os números da caixa postal
     public void caixaPostal() {
         if (!caixaPostal.isEmpty()) {
             System.out.println("Números que estão na caixa postal:\n" + caixaPostal);
