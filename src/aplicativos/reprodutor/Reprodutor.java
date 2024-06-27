@@ -4,26 +4,30 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Reprodutor {
-    private List<Musicas> musicasList;
+    private List<Musica> musicaList;
 
     public Reprodutor() {
-        this.musicasList = new ArrayList<>();
+        this.musicaList = new ArrayList<>();
     }
 
     // métodos do reprodutor
-    public void adicionarMusicaNa() {
-
+    public void adicionarMusicaNa(String nome, String artista) {
+        musicaList.add(new Musica(nome, artista));
+        System.out.println("A música " + nome + " do artista" + artista + " foi adicionada a lista");
     }
 
-    public void mostrarListaMusicas() {
-
+    public List<Musica> mostrarListaMusicas() {
+        return musicaList;
     }
 
-    public void play(String nomeMusica) {
-        System.out.println("Reproduzindo agora: ");
+    public void playar(String nomeMusica) {
+        if (!musicaList.isEmpty())  {
+        System.out.println("Reproduzindo agora: " + mostrarListaMusicas());
+
+        } else System.out.println("A lista está vazia");
     }
 
-    public String pause() {
+    public String pausar() {
         return "Música pausada.\n";
     }
 

@@ -7,8 +7,8 @@ public class Celular {
         //reprodutor
         System.out.println("--Métodos do reprodutor de músicas--");
         Reprodutor reprodutor = new Reprodutor();
-        reprodutor.play("Spit It Out");
-        System.out.println(reprodutor.pause());
+        reprodutor.playar("Spit It Out");
+        System.out.println(reprodutor.pausar());
 
         //chamadas
         System.out.println("--Métodos das chamadas--");

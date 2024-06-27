@@ -1,6 +1,6 @@
 package aplicativos.reprodutor;
 
-public class Musicas {
+public class Musica {
     private String nomeMusica;
     private String artista;
 
@@ -21,7 +21,7 @@ public class Musicas {
         this.artista = artista;
     }
 
-    public Musicas(String nomeMusica, String artista) {
+    public Musica(String nomeMusica, String artista) {
         this.nomeMusica = nomeMusica;
         this.artista = artista;
     }
